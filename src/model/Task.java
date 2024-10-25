@@ -1,6 +1,7 @@
 package model;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class Task {
@@ -24,7 +25,7 @@ public class Task {
 	private String descricao;
 	private LocalDateTime dataCriacao;
 	private String estado;
-	
+	private LocalDateTime dataAlteracaoEstado;
 	
 	// CONSTRUTOR
 	public Task(String descricao) {
@@ -44,10 +45,39 @@ public class Task {
 		this.descricao = novaDescricao;
 	}
 	
-	// METODO DESCRIÇÃO ALTERADA DATA
-	  
+	// METODO DATA DA CRIAÇÃO ALTERADA
+	public String getDescricaoFormatada() {
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
+		return "Tarefa: " + descricao + "\nData de Descrição: "+ dataCriacao.format(formatter) + "\nEstado: " + estado;
+	}
 	
-		
+	// METODO DATA DA ALTERAÇÃO DO ESTADO
+	public LocalDateTime getDataAlteracaoEstado() {
+		return dataAlteracaoEstado;
+	}
+
+	// GETS E SETS
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+
+	public LocalDateTime getDataCriacao() {
+		return dataCriacao;
+	}
+
+	public void setEstado(String estado) {
+		this.estado = estado;
+	}
+
+	public String getEstado() {
+		return estado;
+	}
+
+	
 	
 	
 }
