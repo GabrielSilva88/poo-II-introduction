@@ -50,6 +50,7 @@ Os métodos dessa classe serão, no mínimo, reproduzir, pausar e exibir descri�
 	
 	public String exibirDescricao() {
 		return "Música: titulo e autor";
+		
 	}
 	
 }

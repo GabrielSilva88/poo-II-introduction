@@ -1,5 +1,29 @@
 package model;
 
 public class SupermarketCheckout {
+/*
+Neste exercício, você irá simular um caixa de supermercado para registrar compras. A classe **`CaixaSupermercado`** representa o terminal onde os produtos são registrados e o pagamento é realizado. Essa classe inclui informações como número da compra, lista de itens comprados e total da compra.
 
+**Atributos**
+
+- **`numeroCompra`**: Um identificador único para cada compra.
+- **`itensComprados`**: Uma lista contendo todos os produtos comprados, incluindo quantidade e preço.
+- **`totalCompra`**: O valor total da compra.
+
+**Métodos**
+
+- **`adicionarItemCompra(Produto item)`**: Adiciona um produto à lista de itens comprados.
+- **`removerItemCompra(Produto item)`**: Remove um produto da lista de itens comprados.
+- **`calcularTotalCompra()`**: Calcula o valor total de todos os itens comprados para determinar o total da compra.
+- **`imprimirReciboCompra()`**: Gera um recibo detalhando os itens comprados, seus preços individuais e o total da compra.
+- **`fecharCompra()`**: Finaliza a compra e registra o pagamento.
+- **`aceitarPagamento(String metodoPagamento)`**: Permite realizar o pagamento da compra por diferentes métodos, como dinheiro, cartão ou pix.
+
+Instruções:
+
+Implemente a classe **`CaixaSupermercado`** com os atributos e métodos descritos acima. Certifique-se de que os métodos realizem suas respectivas operações de forma correta e eficiente.
+*/
+	
+	
+	
 }

@@ -21,13 +21,18 @@ A classe **`Carro`** oferece métodos para:
 - **Frear:** Diminui a velocidade do carro.
 - **Abastecer:** Adiciona combustível ao tanque do carro.
 */
-
-	String Marca;
-	String Modelo;
-	int Ano;
-	String Cor;
-	double Quilometragem;
-	String Combustível;
+	// ATRIBUTO
+   private String Marca;
+   private String Modelo;
+   private int Ano;
+   private String Cor;
+   private double Quilometragem;
+   private String Combustivel;
+   // ATRIBUTOS PARA METODOS
+   private boolean motor;
+   private double velocidade;
+   private double temCombustivel;
+ 
 	
 	// set() e get()
 	
@@ -72,32 +77,59 @@ A classe **`Carro`** oferece métodos para:
 	}
 
 	public String getCombustível() {
-		return Combustível;
+		return Combustivel;
 	}
 
 	public void setCombustível(String combustível) {
-		Combustível = combustível;
+		Combustivel = combustível;
 	}
 
-	// métodos
+	// MÉTODOS 
 	
-	public String ligar() {
-		return "Aciona o motor do carro.";
+	public void ligarMotor() {
+		if(motor == false) {
+			motor = true;
+			System.out.println("O motor da partida e liga.");
+		}else {
+			System.out.println("O motor ja deu partida e está ligado.");
+		}
 	}
 	
-	public String desligar() {
-		return "Desliga o motor do carro.";
+	public void desligarMotor() {
+		if(velocidade == 0 && motor) {
+			motor = false;
+			System.out.println("O motor foi desligado.");
+		}else if(velocidade > 0 ) {
+			System.out.println("Reduzir velocidade para zero, desligar o motor.");
+		}else {
+			System.out.println("O carro já, desligado.");
+		}
 	}
 	
-	public String acelerar() {
-		return "Aumenta a velocidade do carro.";
+	public void acelerar() {
+		if (motor == true && velocidade < 0) {
+			velocidade ++;
+			Quilometragem += velocidade;
+			temCombustivel -= velocidade;
+		System.out.println("O motor e acelerado" + velocidade + "velocidade aumenta." + temCombustivel +"o combustivel do tanque");
+		} else {
+			System.out.println("O motor ");
+		}
 	}
 	
-	public String frear() {
-		return "Diminui a velocidade do carro.";
+	public void frear(double reduzir) {
+		if (motor==true && velocidade > 0) {
+			velocidade -= reduzir;
+			if (velocidade < 0) {
+				velocidade = 0;
+			}
+			System.out.println("Freando, velocidade parando:");
+		}
+			
 	}
 	
-	public String abastercer() {
-		return "Adiciona combustível ao tanque do carro.";
+	public void abastercer(double litros) {
+		temCombustivel += litros;
+		System.out.println("Tanque com"+temCombustivel+", abastecido" + litros);
 	}
 }
