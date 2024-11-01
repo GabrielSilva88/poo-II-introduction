@@ -3,25 +3,25 @@ package model;
 public class Pet {
 /*Crie um aplicativo para cuidar de seu animal de estimação. A classe **`AnimalEstimação`** representa um animal com:
 
-- **Nome:** O nome do animal.
-- **Idade:** A idade do animal em anos ou meses.
-- **Espécie:** O tipo de animal (ex: cachorro, gato, peixe).
-- **Raça:** A raça específica do animal (ex: Labrador Retriever, Siamês, Guppy).
-- **Porte:** O tamanho do animal (ex: pequeno, médio, grande).
-- **Sexo:** O sexo do animal (macho ou fêmea).
+- Nome: O nome do animal.
+- Idade: A idade do animal em anos ou meses.
+- Espécie: O tipo de animal (ex: cachorro, gato, peixe).
+- Raça: A raça específica do animal (ex: Labrador Retriever, Siamês, Guppy).
+- Porte: O tamanho do animal (ex: pequeno, médio, grande).
+- Sexo: O sexo do animal (macho ou fêmea).
 
-A classe **`AnimalEstimação`** oferece métodos para:
+A classe AnimalEstimação oferece métodos para:
 
-- **Alimentar:** Fornece comida ao animal.
-- **Brincar:** Interage com o animal para se divertir e gastar energia.
-- **Levar ao veterinário:** Permite agendar consultas e levar o animal para receber cuidados médicos.
-- **Passear:** Leva o animal para passear ao ar livre.
-- **Dar banho:** Limpa o animal de estimação.
-- **Treinar:** Ensina comandos básicos ao animal.
-- **Verificar felicidade:** Monitora o bem-estar do animal e identifica sinais de estresse ou tristeza.
+- Alimentar: Fornece comida ao animal.
+- Brincar: Interage com o animal para se divertir e gastar energia.
+- Levar ao veterinário: Permite agendar consultas e levar o animal para receber cuidados médicos.
+- Passear: Leva o animal para passear ao ar livre.
+- Dar banho: Limpa o animal de estimação.
+- Treinar: Ensina comandos básicos ao animal.
+- Verificar felicidade: Monitora o bem-estar do animal e identifica sinais de estresse ou tristeza.
 */
 	
-	// Atributos
+	// ATRIBUTOS
 	
 	private String nome; // O nome do animal.
 	private String idade; // A idade do animal em anos ou meses.
@@ -80,7 +80,7 @@ A classe **`AnimalEstimação`** oferece métodos para:
 		this.sexo = sexo;
 	}
 
-	// Metódos
+	// MÉTODOS
 	
 	public String Alimentar() {
 		return "Fornecer comida ao animal";
