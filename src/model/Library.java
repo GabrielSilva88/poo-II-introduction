@@ -2,23 +2,24 @@ package model;
 
 public class Library {
 /*
-Implemente um sistema de gerenciamento para uma biblioteca. A classe **`Biblioteca`** representa o catálogo de livros, com informações sobre cada livro como:
+Implemente um sistema de gerenciamento para uma biblioteca. 
+A classe Biblioteca representa o catálogo de livros, com informações sobre cada livro como:
 
-- **Nome do livro:** O título do livro.
-- **Autor:** O(s) autor(es) do livro.
-- **Gênero:** A categoria literária do livro (ex: romance, fantasia, suspense).
-- **Editora:** A empresa responsável pela publicação do livro.
-- **Ano de publicação:** O ano em que o livro foi lançado.
-- **Disponibilidade:** Indica se o livro está emprestado, disponível para empréstimo ou reservado.
+- Nome do livro: O título do livro.
+- Autor: O(s) autor(es) do livro.
+- Gênero: A categoria literária do livro (ex: romance, fantasia, suspense).
+- Editora: A empresa responsável pela publicação do livro.
+- Ano de publicação: O ano em que o livro foi lançado.
+- Disponibilidade: Indica se o livro está emprestado, disponível para empréstimo ou reservado.
 
-A classe **`Biblioteca`** oferece métodos para:
+A classe Biblioteca oferece métodos para:
 
-- **Empréstimo:** Registra o empréstimo de um livro a um usuário.
-- **Devolução:** Registra a devolução de um livro pelo usuário.
-- **Pesquisa por título/autor/gênero:** Permite buscar livros no catálogo por diferentes critérios.
-- **Reservar livro:** Permite que um usuário reserve um livro emprestado por outro.
-- **Renovar empréstimo:** Permite estender o prazo de empréstimo de um livro, se disponível.
-- **Multar por atraso:** Calcula e registra multas por atraso na devolução de livros.
+- Empréstimo: Registra o empréstimo de um livro a um usuário.
+- Devolução: Registra a devolução de um livro pelo usuário.
+- Pesquisa por título/autor/gênero: Permite buscar livros no catálogo por diferentes critérios.
+- Reservar livro: Permite que um usuário reserve um livro emprestado por outro.
+- Renovar empréstimo: Permite estender o prazo de empréstimo de um livro, se disponível.
+- Multar por atraso: Calcula e registra multas por atraso na devolução de livros.
 */
 	// Atributos
 	

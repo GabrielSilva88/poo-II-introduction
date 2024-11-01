@@ -1,7 +1,9 @@
 package model;
 
 public class Pet {
-/*Crie um aplicativo para cuidar de seu animal de estimação. A classe **`AnimalEstimação`** representa um animal com:
+/*
+ Crie um aplicativo para cuidar de seu animal de estimação.
+ A classe AnimalEstimação representa um animal com:
 
 - Nome: O nome do animal.
 - Idade: A idade do animal em anos ou meses.
@@ -83,27 +85,27 @@ A classe AnimalEstimação oferece métodos para:
 	// MÉTODOS
 	
 	public String Alimentar() {
-		return "Fornecer comida ao animal";
+		return "Fornecer comida ao animal e "+nome+" foi alimentado, com ração";
 	}
 	
 	public String brincar() {
-		return "Interage com o animal para se divertir e gastar energia";
+		return nome + " brinca com seu briquedo favorito.";
 	}
 	
 	public String levarAoVeterianrio() {
-		return "Permite agendar consultas e levar o animal para receber cuidados médicos.";
+		return nome + "Recebeu cuidados do veterinario.";
 	}
 	
 	public String Pessear() {
-		return "Leva o animal para passear ao ar livre.";
+		return "Leva o " + nome + ",para passear ao ar livre.";
 	}
 	
 	public String darBanho() {
-		return "Limpa o animal de estimação.";
+		return nome + ", vai tomar banho.";
 	}
 	
 	public String treinar() {
-		return "Ensina comandos básicos ao animal.";
+		return "Ensina comandos básicos a, "+nome;
 	}
 	
 	public String verificarFelicidade() {

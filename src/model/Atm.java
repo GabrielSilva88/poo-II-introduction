@@ -52,8 +52,21 @@ Certifique-se de que os métodos realizem suas respectivas operações de forma 
 	}
 	
 	// MÉTODOS
+	//adicionarItemCompra(Produto item): Adiciona um produto à lista de itens comprados.
 	public int adicionarItemComprar(int produto){
 		return this.itensComprados = produto; 
 	}
+	
+	//removerItemCompra(Produto item): Remove um produto da lista de itens comprados.
+	public int removerItemComprar(int produto) {
+		this.itensComprados = produto;
+		return produto--;
+	}
+	/*
+-
+-calcularTotalCompra(): Calcula o valor total de todos os itens comprados para determinar o total da compra.
+-imprimirReciboCompra(): Gera um recibo detalhando os itens comprados, seus preços individuais e o total da compra.
+-fecharCompra(): Finaliza a compra e registra o pagamento.
+-aceitarPagamento(String metodoPagamento): Permite realizar o pagamento da compra por diferentes métodos, como dinheiro, cartão ou pix.*/
 	
 }

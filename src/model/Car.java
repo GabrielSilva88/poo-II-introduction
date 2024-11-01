@@ -4,22 +4,22 @@ public class Car {
 /*
 Imagine um sistema para controlar as funções de um carro. 
 
-A classe **`Carro`** representa um veículo com:
+A classe Carro representa um veículo com:
 
-- **Marca:** O fabricante do carro (ex: Fiat, Volkswagen, Chevrolet).
-- **Modelo:** O nome específico do modelo (ex: Argo, Gol, Onix).
-- **Ano:** O ano de fabricação do carro.
-- **Cor:** A cor do carro.
-- **Quilometragem:** A distância total percorrida pelo carro.
-- **Combustível:** O tipo de combustível utilizado pelo carro (gasolina, diesel, etc.).
+- Marca: O fabricante do carro (ex: Fiat, Volkswagen, Chevrolet).
+- Modelo: O nome específico do modelo (ex: Argo, Gol, Onix).
+- Ano: O ano de fabricação do carro.
+- Cor: A cor do carro.
+- Quilometragem: A distância total percorrida pelo carro.
+- Combustível: O tipo de combustível utilizado pelo carro (gasolina, diesel, etc.).
 
-A classe **`Carro`** oferece métodos para:
+A classe Carro oferece métodos para:
 
-- **Ligar:** Aciona o motor do carro.
-- **Desligar:** Desliga o motor do carro.
-- **Acelerar:** Aumenta a velocidade do carro.
-- **Frear:** Diminui a velocidade do carro.
-- **Abastecer:** Adiciona combustível ao tanque do carro.
+- Ligar: Aciona o motor do carro.
+- Desligar: Desliga o motor do carro.
+- Acelerar: Aumenta a velocidade do carro.
+- Frear: Diminui a velocidade do carro.
+- Abastecer: Adiciona combustível ao tanque do carro.
 */
 	// ATRIBUTO
    private String Marca;

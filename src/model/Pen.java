@@ -20,6 +20,39 @@ A classe Caneta oferece métodos para:
 	private String marca;
 	private int nivelDeTinta;
 	
+	// GETS E SETS
+	public String getCorDaTinta() {
+		return corDaTinta;
+	}
+
+	public void setCorDaTinta(String corDaTinta) {
+		this.corDaTinta = corDaTinta;
+	}
+
+	public String getTamanhoDaPonta() {
+		return tamanhoDaPonta;
+	}
+
+	public void setTamanhoDaPonta(String tamanhoDaPonta) {
+		this.tamanhoDaPonta = tamanhoDaPonta;
+	}
+
+	public String getMarca() {
+		return marca;
+	}
+
+	public void setMarca(String marca) {
+		this.marca = marca;
+	}
+
+	public int getNivelDeTinta() {
+		return nivelDeTinta;
+	}
+
+	public void setNivelDeTinta(int nivelDeTinta) {
+		this.nivelDeTinta = nivelDeTinta;
+	}
+
 	//MÉTODOS
 	public String escrever(String tampa) {
 		if(tampa.equalsIgnoreCase("aberta")) {
