@@ -100,7 +100,7 @@ public class GeometricFigure {
 		}
 		
 		default:
-			throw new IllegalArgumentException("Unexpected value: " + figura);
+			throw new IllegalArgumentException("figura não encontrada: " + figura);
 		}
 	}
 
@@ -124,7 +124,7 @@ public class GeometricFigure {
 		}
 		
 		default:
-			throw new IllegalArgumentException("Unexpected value: " + figura);
+			throw new IllegalArgumentException("figura não encontrada: " + figura);
 		}
 	
 	}
